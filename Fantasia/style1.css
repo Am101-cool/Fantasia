@@ -1,0 +1,92 @@
+@charset "UTF-8"; 
+
+body {
+    margin: 20px 10%;
+    padding: 20px;
+    font-family: 'Courier New', Arial;
+	font-size: 18px; 
+	font-weight: bold;
+	line-height: 2;
+    color: #000435;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url("../Fantasia/tile.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.4; 
+    z-index: -1; 
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #000435;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5); 
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a:link {
+    color: #000435;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #89CFF0, #800020); 
+}
+
+nav a:visited {
+    color: #000435;
+}
+
+nav a:hover {
+    color: #89CFF0;
+    background-color: #000435;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #89CFF0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px; 
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3); 
+}
+
+.story-link:link {
+    color: #0B3D91;
+}
+
+.story-link:visited {
+    color: #800020;
+}
+
+.story-link:hover {
+    color: #89CFF0;
+    text-decoration: underline;
+}
+
+.story-link:active {
+    color: #800020;
+}
+
+audio {
+    display: block;
+    margin: 20px auto;
+}
